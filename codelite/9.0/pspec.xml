@@ -1,0 +1,40 @@
+<PISI>
+    <Source>
+        <Name>codelite</Name>
+        <Homepage>http://codelite.org/</Homepage>
+        <Packager>
+            <Name>İbrahim KARAGÜZEL</Name>
+            <Email>ibrahimkaraguzel@windowslive.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <PartOf>programming.environment</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>CodeLite programı tamamen açık kaynak kodlu olarak geliştirilen ve oldukça güçlü bir kaynak kodu editörü ve C ile C++ programlama dilleri için hazırlanmış.</Summary>
+        <Description>CodeLite programı tamamen açık kaynak kodlu olarak geliştirilen ve oldukça güçlü bir kaynak kodu editörü ve C ile C++ programlama dilleri için hazırlanmış. Oldukça kullanıcı dostu bir arayüze sahip olan program basitliğine rağmen karmaşık projeler geliştirmenizi sağlayabilecek düzeyde ve her türlü platform üzerinde çalışabiliyor.</Description>
+        <BuildDependencies>
+            <Dependency>cmake</Dependency>
+            <Dependency>libssh-devel</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="437e7a663b1da241cb74445c0619d8865c7e8b87" type="targz">http://sourceforge.net/projects/codelite/files/Releases/codelite-9.0/codelite-9.0-gtk.src.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>codelite</Name>
+        <RuntimeDependencies>
+            <Dependency>libssh</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2016-02-09</Date>
+            <Version>9.0</Version>
+            <Comment>Codelite (IDE), tamamen açık kaynak üzerine oluşturulmuş, güçlü, hafif, kullanımı kolay, Windows, Mac OS X ve Linux üzerinde çalışabilen bir C/C++ Tümleşik Geliştirme Ortamı'dır.</Comment>
+            <Name>İbrahim KARAGÜZEL</Name>
+            <Email>ibrahimkaraguzel@windowslive.com</Email>
+        </Update>
+    </History>
+</PISI>
+
+<!-- By PiSiDo 2.0.0 -->
